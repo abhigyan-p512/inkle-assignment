@@ -1,0 +1,422 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  padding: 24px;
+  gap: 24px;
+}
+
+/* top nav */
+
+.navbar {
+  background: #111827;
+  color: #f9fafb;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav-link {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.nav-link.active {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.nav-user {
+  font-size: 14px;
+}
+
+.button,
+button {
+  border-radius: 999px;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.button.secondary,
+button.secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.button.danger,
+button.danger {
+  background: #dc2626;
+}
+
+/* layout columns */
+
+.column {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.column.main {
+  flex: 2;
+}
+
+.column.side {
+  flex: 1;
+}
+
+/* headings */
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+/* forms */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 360px;
+}
+
+.input,
+textarea {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* feed */
+
+.activity-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-message {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.activity-meta {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* posts */
+
+.post-card {
+  border-radius: 14px;
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 10px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.post-author {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.post-content {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* admin table */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 8px 6px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  font-size: 11px;
+}
+
+.badge.admin {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge.owner {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+.section-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.stats-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.stat-label {
+  font-weight: 500;
+}
+
+.actions-row {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+/* ==== Feed / posts polish ==== */
+
+.feed-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.feed-subtitle {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* avatar & post layout */
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.post-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+}
+
+.post-author-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.post-author-name a {
+  color: #111827;
+}
+
+.post-author-name a:hover {
+  text-decoration: underline;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ==== Profile page polish ==== */
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.profile-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.profile-username {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ==== Auth pages (login/signup) ==== */
+
+.auth-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+.auth-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px 28px 24px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+.auth-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.auth-subtitle {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+.auth-footer {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.auth-footer a {
+  color: #2563eb;
+  font-weight: 500;
+}
+/* Feed page layout: posts + right sidebar */
+.feed-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* Main posts column */
+.feed-layout .page-main {
+  flex: 2;
+  max-width: 720px;
+}
+
+/* Right sidebar (Network activity) */
+.feed-layout .page-sidebar {
+  flex: 1;
+  max-width: 320px;
+  position: sticky;
+  top: 96px; /* adjust if your navbar height differs */
+}
+
+/* On small screens, stack them */
+@media (max-width: 900px) {
+  .feed-layout {
+    flex-direction: column;
+  }
+
+  .feed-layout .page-sidebar {
+    position: static;
+    max-width: 100%;
+  }
+}
