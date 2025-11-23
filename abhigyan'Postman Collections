@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "a1ece986-28dd-4a05-b27c-1c0c8e3dfd9e",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44106432",
+		"_collection_link": "https://abhi-2156614.postman.co/workspace/abhi's-Workspace~3ac59e42-5ae9-4743-8571-d0baa4081d01/collection/44106432-a1ece986-28dd-4a05-b27c-1c0c8e3dfd9e?action=share&source=collection_link&creator=44106432"
+	},
+	"item": [
+		{
+			"name": "Activity",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjFmM2EyZGUzZDNiOWVmZGQ3NjM3MyIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzYzODY1MTczLCJleHAiOjE3NjQ0Njk5NzN9.cJENBHkmFpr5zUoqVgE1VqZnqagngBk-Br0tvyP2LIE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/feed/activity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"feed",
+						"activity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Feed",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjFmM2EyZGUzZDNiOWVmZGQ3NjM3MyIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzYzODY1MTczLCJleHAiOjE3NjQ0Njk5NzN9.cJENBHkmFpr5zUoqVgE1VqZnqagngBk-Br0tvyP2LIE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/feed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"feed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjFmM2EyZGUzZDNiOWVmZGQ3NjM3MyIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzYzODY1MTczLCJleHAiOjE3NjQ0Njk5NzN9.cJENBHkmFpr5zUoqVgE1VqZnqagngBk-Br0tvyP2LIE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\":\"post\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "follow",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjFmM2EyZGUzZDNiOWVmZGQ3NjM3MyIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzYzODY1MTczLCJleHAiOjE3NjQ0Njk5NzN9.cJENBHkmFpr5zUoqVgE1VqZnqagngBk-Br0tvyP2LIE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/users/69220168641fbef36e7d4dda/follow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"69220168641fbef36e7d4dda",
+						"follow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "block",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjFmM2EyZGUzZDNiOWVmZGQ3NjM3MyIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzYzODY1MTczLCJleHAiOjE3NjQ0Njk5NzN9.cJENBHkmFpr5zUoqVgE1VqZnqagngBk-Br0tvyP2LIE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/users/69220168641fbef36e7d4dda/block",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"69220168641fbef36e7d4dda",
+						"block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"abhigyan\",\"username\":\"abhigyan\",\"email\":\"abhigyan7801@gmail.com\",\"password\":\"12345\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
